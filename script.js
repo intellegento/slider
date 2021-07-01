@@ -1,15 +1,15 @@
 let btnRight = document.querySelector(".btnRight");
-let slider = document.querySelector("img");
+let slides = document.querySelectorAll("img");
 let i = 0;
 
 btnRight.addEventListener("click", function () {
   ++i;
-  if (i >= slider.length) {
-    slider[i - 1].classList.remove("activ");
+  if (i >= slides.length) {
+    slides[i - 1].classList.remove("block");
     i = 0;
-    slider[i].classList.add("activ");
+    slides[i].classList.add("block");
   } else {
-    slider[i - 1].classList.remove("activ");
-    slider[i].classList.add("activ");
+    slides[i - 1].classList.remove("block");
+    slides[i].classList.add("block");
   }
 });
