@@ -8,17 +8,19 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="slides">
-        <img src="img/a2.jpg" class="block" alt="">
-        <img src="img/a3.jpg" alt="">
-        <img src="img/a4.jpg" alt="">
-        <img src="img/a5.jpg" alt="">
-        <img src="img/a6.jpg" alt="">
-        <img src="img/a7.jpg" alt="">
+    <div class="slider">
+       <div class="slider-items">
+        <img data-index="0" src="img/a2.jpg" alt="" class="active">
+        <img data-index="1" src="img/a3.jpg" alt="">
+        <img data-index="2" src="img/a4.jpg" alt="">
+        <img data-index="3" src="img/a5.jpg" alt="">
+        <img data-index="4" src="img/a6.jpg" alt="">
+        <img data-index="5" src="img/a7.jpg" alt="">
+       </div>
     </div> 
-    <button class="btnRight">Right</button>
-    <button class="btnLeft">Left</button>  
+    <button class="prev">Prev</button>
+    <button class="next">Next</button>  
     
-    <script src="script.js" class="btnRight"></script>
+    <script src="script.js"></script>
 </body>
 </html>
