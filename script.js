@@ -12,11 +12,17 @@ prev.addEventListener("click", (e) => {
 next.addEventListener("click", (e) => {
   a = a - s;
   slider.style.transform = "translate(" + a + "px, 0)";
+  if (a < -4495) {
+    a = 991;
+  }
   console.log(a);
 });
 
 prev.addEventListener("click", (e) => {
   a = a + s;
   slider.style.transform = "translate(" + a + "px, 0)";
+  if (a > 4495) {
+    a = -991;
+  }
   console.log(a);
 });
