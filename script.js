@@ -4,10 +4,7 @@ const active = document.querySelector(".active");
 const slider = document.querySelector(".slider-items");
 const s = 991;
 let a = 0;
-
-prev.addEventListener("click", (e) => {
-  console.log("prev");
-});
+let b = -4955;
 
 next.addEventListener("click", (e) => {
   a = a - s;
@@ -19,10 +16,10 @@ next.addEventListener("click", (e) => {
 });
 
 prev.addEventListener("click", (e) => {
-  a = a + s;
-  slider.style.transform = "translate(" + a + "px, 0)";
-  if (a > 4495) {
-    a = -991;
+  b = b + s;
+  slider.style.transform = "translate(" + b + "px, 0)";
+  if (b < -4955) {
+    b = 0;
   }
   console.log(a);
 });
