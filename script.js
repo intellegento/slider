@@ -15,11 +15,4 @@ next.addEventListener("click", (e) => {
   console.log(a);
 });
 
-prev.addEventListener("click", (e) => {
-  b = b + s;
-  slider.style.transform = "translate(" + b + "px, 0)";
-  if (b < -4955) {
-    b = 0;
-  }
-  console.log(a);
-});
+
