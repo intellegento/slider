@@ -4,7 +4,7 @@ const active = document.querySelector(".active");
 const slider = document.querySelector(".slider-items");
 const s = 991;
 let a = 0;
-let b = -4955;
+
 
 next.addEventListener("click", (e) => {
   a = a - s;
